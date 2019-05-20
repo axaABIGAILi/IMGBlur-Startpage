@@ -1,0 +1,85 @@
+body {
+    background-image: url("images/cargirlwall.png");
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: 100%vh;
+    font-family: 'Anonymous Pro', monospace;
+    color: #3e2d43;
+    overflow: scroll;
+}
+
+div {
+    text-align: center;
+    z-index: 2;
+}
+
+a {
+    color: #3e2d43;
+}
+
+a:visited {
+    color:  #4d283d;
+}
+
+a:hover {
+    color: #8098e5;
+}
+
+.container::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background-image: url('images/cargirlwall.png');
+    height: 100%;
+    width: auto;
+
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+}
+
+.container {
+    background-color: transparent;
+    text-align: center;
+    width: 650px;
+    height: 100%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    position: relative;
+    object-fit: contain;
+}
+
+.links {
+    background-color: plum;
+    border: 3px solid plum;
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+#imgcontainer {
+    background-image: url("images/cargirlwall.png");
+    background-size: cover;
+    background-position-x: 40%;
+    float: left;
+    margin-right: 3px;
+    overflow: scroll;
+}
+
+#left {
+    margin: 0 auto;
+    margin-top: 150px;
+    display: inline-block;
+}
+
+#right {
+    float: right;
+    margin-left: 3px;
+}
